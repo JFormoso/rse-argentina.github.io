@@ -1,0 +1,51 @@
+---
+title: "Encuentro Inaugural de RSE Argentina"
+author: "María González"
+date: "2024-10-15"
+categories: [eventos, comunidad]
+description: "Resumen del primer encuentro virtual de la comunidad RSE Argentina"
+---
+
+El pasado 10 de octubre de 2024 celebramos nuestro primer encuentro virtual con más de 50 participantes de todo el país. Fue una jornada emocionante donde sentamos las bases de lo que será RSE Argentina.
+
+## Lo que discutimos
+
+### ¿Qué significa ser RSE en Argentina?
+
+Durante la primera hora, compartimos experiencias sobre nuestros roles actuales:
+
+- El 60% de los participantes dedica más del 50% de su tiempo a escribir código
+- Solo el 20% tiene "software" o "programación" en su título laboral
+- El 85% aprendió a programar de forma autodidacta o con cursos informales
+
+### Desafíos identificados
+
+Los principales desafíos que enfrentamos como comunidad:
+
+1. **Reconocimiento institucional**: El trabajo de desarrollo de software no es valorado en evaluaciones
+2. **Formación**: Falta de capacitación formal en buenas prácticas de software científico
+3. **Carrera profesional**: No hay un camino claro para RSEs en instituciones de investigación
+4. **Sostenibilidad**: El conocimiento se pierde cuando los investigadores cambian de proyecto
+
+### Próximos pasos acordados
+
+- Crear canales de comunicación (Slack, lista de correo)
+- Organizar meetups mensuales virtuales
+- Desarrollar este sitio web
+- Conectar con la red internacional de RSE
+
+## Agradecimientos
+
+Queremos agradecer especialmente a:
+
+- RSE Chile por compartir su experiencia
+- Todos los participantes por su entusiasmo
+- Las instituciones que difundieron el evento
+
+## ¡Sumate!
+
+Si no pudiste participar, no te preocupes. Grabamos la sesión y pronto organizaremos más encuentros. [Únete a nuestra lista de correo](/contacto.qmd) para estar al tanto.
+
+---
+
+*¿Tenés algo para compartir? Escribí tu propio post para el blog. [Instrucciones aquí](https://github.com/rse-argentina/website/blob/main/CONTRIBUTING.md)*

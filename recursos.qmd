@@ -1,0 +1,29 @@
+---
+title: "Recursos"
+---
+
+## Guías y tutoriales
+
+### Para empezar
+
+-   📚 [**Introducción a RSE**](https://www.software.ac.uk/guide/introduction-research-software-engineering) - Software Sustainability Institute
+-   🎓 [**The Carpentries**](https://carpentries.org/) - Lecciones sobre herramientas fundamentales para investigación computacional
+-   📖 [**Good Enough Practices in Scientific Computing**](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510) - Paper fundamental sobre buenas prácticas
+
+### Desarrollo de software científico
+
+-   🐍 [**Scientific Python Tutorials**](https://learn.scientific-python.org/) - Tutoriales de Python para ciencia
+-   📊 [**R for Data Science**](https://r4ds.had.co.nz/) - Libro online gratuito sobre R
+-   🔧 [**Research Software Engineering with Python**](https://alan-turing-institute.github.io/rse-course/html/index.html) - Curso completo del Alan Turing Institute
+-   📦 [**Reproducible Research in R**](https://ropensci.org/packages/) - Paquetes de rOpenSci
+
+
+## Materiales de RSE Argentina
+
+### Presentaciones: ¡PROXIMAMENTE!
+
+## Contribuir recursos
+
+¿Conoces algún recurso valioso que no está en la lista? ¡Ayúdanos a mejorar esta sección!
+
+[Sugerir un recurso](https://github.com/rse-argentina/website/issues/new?template=resource.md)
