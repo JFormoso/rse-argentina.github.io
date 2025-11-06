@@ -1,29 +1,6 @@
 # RSE Argentina - Sitio Web
 
-Este es el repositorio del sitio web de RSE Argentina (Research Software Engineering Argentina), construido con [Quarto](https://quarto.org/).
-
-## 🚀 Inicio rápido
-
-### Prerrequisitos
-
-- [Quarto](https://quarto.org/docs/get-started/) (versión 1.3 o superior)
-- [Git](https://git-scm.com/)
-- Rstudio 
-
-### Instalación
-
-1. Clona el repositorio:
-```bash
-git clone https://github.com/rse-argentina/website.git
-cd website
-```
-
-2. Renderiza el sitio localmente:
-```bash
-quarto preview
-```
-
-El sitio estará disponible en `http://localhost:4000`
+¡Bienvenidos/as! Este es el repositorio del sitio web de RSE Argentina (Research Software Engineering Argentina), construido con [Quarto](https://quarto.org/).
 
 ## 📁 Estructura del proyecto
 
