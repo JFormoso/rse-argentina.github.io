@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "RSE Argentina"
+  description: "Research Software Engineering en Argentina"
+  favicon: "images/favicon.ico"
+  
+  navbar:
+    background: primary
+    left:
+      - text: "Inicio"
+        href: index.qmd
+      - text: "Quiénes Somos"
+        href: quienes-somos.qmd
+      - text: "Recursos"
+        href: recursos.qmd
+      - text: "Contacto"
+        href: contacto.qmd
+    right:
+      - icon: github
+        href: https://github.com/rse-argentina
+
+  page-footer:
+    center: |
+      © 2025 RSE Argentina | 
+    background: light
+
+format:
+  html:
+    theme: 
+      light: united
+      dark: default
+    css: styles.css
+    toc: true
+    toc-location: right
+    lang: es
+
+execute:
+  freeze: auto
