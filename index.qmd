@@ -1,66 +1,11 @@
 ---
 title: "RSE Argentina | Ingeniería de Software de Investigación en Argentina"
 subtitle: "Construyendo una comunidad para quienes desarrollan software de investigación"
+about:
+  template: jolla
+format:
+  html:
+    toc: FALSE 
 ---
 
-## ¿Qué es Research Software Engineering o RSE?
 
-Research Software Engineering (o RSE, por sus siglás en inglés) es un campo emergente que reconoce la importancia fundamental del software en la investigación moderna. Los Research Software Engineers son profesionales que combinan conocimientos de desarrollo de software con comprensión de la investigación académica.
-
-### ¿Eres RSE?
-
-Si te identificas con alguna de estas actividades, probablemente eres un Research Software Engineer:
-
-- Desarrollas o mantienes software utilizado en proyectos de investigación
-- Escribes código para procesar, analizar o visualizar datos científicos
-- Implementas algoritmos y modelos computacionales para investigación
-- Optimizas código existente para mejorar su rendimiento
-- Documentas y haces más reproducible el software de investigación
-- Enseñas buenas prácticas de programación a investigadores
-
-## ¿Por qué RSE Argentina?
-
-Argentina tiene una rica tradición en investigación científica y tecnológica, con instituciones de excelencia como el CONICET, universidades nacionales y centros de investigación. Sin embargo, al igual que en otros países, el rol de quienes desarrollan software de investigación no siempre es reconocido adecuadamente.
-
-### Nuestra misión
-
-**RSE Argentina** surge para:
-
-1. **Visibilizar** el trabajo de quienes desarrollan software en el contexto de la investigación
-2. **Conectar** a profesionales que comparten desafíos similares
-3. **Promover** el reconocimiento institucional del rol de RSE
-4. **Compartir** conocimientos y buenas prácticas
-5. **Fortalecer** la calidad del software de investigación en Argentina
-
-### El contexto argentino
-
-En Argentina, muchos investigadores, becarios doctorales, postdocs y personal de apoyo dedican gran parte de su tiempo al desarrollo de software, pero:
-
-- Esta labor no siempre es valorada en las evaluaciones académicas
-- Falta formación específica en desarrollo de software científico
-- No existe un camino claro de desarrollo profesional para RSEs
-- El conocimiento técnico se pierde cuando los investigadores cambian de proyecto
-
-## Únete a la comunidad
-
-Estamos construyendo una comunidad inclusiva y colaborativa. No importa si:
-
-- Eres autodidacta o tienes formación formal en computación
-- Trabajas en el sector público, privado o académico
-- Desarrollas software complejo o scripts simples
-- Tienes años de experiencia o recién empiezas
-
-**¡Todos los que contribuyen con software a la investigación son bienvenidos!**
-
-:::{.callout-note}
-## ¿Sabías que...?
-
-El movimiento RSE comenzó en 2012 en Reino Unido y desde entonces ha crecido internacionalmente, con asociaciones formales en más de 14 países y regiones, incluyendo Chile en Latinoamérica.
-:::
-
-## Próximos pasos
-
-- [Conoce al equipo](quienes-somos.qmd) que está impulsando esta iniciativa
-- [Participa en nuestros eventos](eventos.qmd) para conectar con la comunidad
-- [Explora recursos](recursos.qmd) para mejorar tus habilidades
-- [Contáctanos](contacto.qmd) para involucrarte más activamente

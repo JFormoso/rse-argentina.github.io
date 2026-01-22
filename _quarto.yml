@@ -9,16 +9,20 @@ website:
   
   navbar:
     background: primary
-    left:
+    right:
       - text: "Inicio"
         href: index.qmd
+      - text: "¿Qué es RSE?"
+        href: que-es-rse.qmd
       - text: "Quiénes Somos"
         href: quienes-somos.qmd
+      - text: "Actividades"
+        href: actividades.qmd
       - text: "Recursos"
         href: recursos.qmd
       - text: "Contacto"
         href: contacto.qmd
-    right:
+    left:
       - icon: github
         href: https://github.com/rse-argentina
 
@@ -38,4 +42,4 @@ format:
     lang: es
 
 execute:
-  freeze: auto
+  freeze: true

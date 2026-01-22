@@ -1,402 +1,17 @@
 [
   {
-    "objectID": "solucion-temas-css.html",
-    "href": "solucion-temas-css.html",
-    "title": "Solución: Temas de Bootstrap sobrescribiendo CSS personalizado",
-    "section": "",
-    "text": "Los temas de Bootstrap (como “united” y “darkly”) tienen sus propios colores y estilos que pueden sobrescribir tu CSS personalizado, especialmente los colores.\n\n\n\n\n\nHe cambiado tu configuración a:\nformat:\n  html:\n    theme: \n      light: default\n      dark: default\n    css: styles.css\nEl tema “default” es más neutral y permite que tus estilos personalizados tengan prioridad.\n\n\n\nSi aún tienes problemas, puedes usar _quarto-sin-temas.yml:\n\nRenombra el archivo:\nmv _quarto.yml _quarto-con-temas.yml\nmv _quarto-sin-temas.yml _quarto.yml\nEste archivo no usa temas de Bootstrap, solo tu CSS personalizado.\n\n\n\n\nSi prefieres mantener los temas, agrega este CSS al inicio de tu styles.css:\n/* Forzar colores de Bootstrap */\n[data-bs-theme=\"light\"] {\n  --bs-primary: #702552 !important;\n  --bs-secondary: #2c3e50 !important;\n  --bs-link-color: #702552 !important;\n  --bs-link-hover-color: #2c3e50 !important;\n  --bs-body-color: #212529 !important;\n}\n\n[data-bs-theme=\"dark\"] {\n  --bs-primary: #a87391 !important;\n  --bs-secondary: #9b5c7f !important;\n  --bs-link-color: #a87391 !important;\n  --bs-link-hover-color: #9b5c7f !important;\n}\n\n\n\n\n\nRenderiza el sitio:\nquarto preview\nVerifica estos elementos:\n\nEnlaces deben ser púrpura (#702552)\nBotones principales deben ser púrpura\nTítulos H1 deben tener borde púrpura\nNavbar brand debe ser púrpura\n\n\n\n\n\n\nLimpiar caché: A veces necesitas limpiar y reconstruir:\nquarto clean\nquarto preview\nForzar recarga en navegador: Ctrl+Shift+R (o Cmd+Shift+R en Mac)\nInspeccionar elementos: Usa las herramientas de desarrollo del navegador (F12) para ver qué estilos se están aplicando\n\n\n\n\nTu styles.css ahora incluye: - !important en reglas críticas - Selectores más específicos - Variables CSS con prioridad - Sobrescritura de clases de Bootstrap\n¡Esto debería resolver el problema de los temas sobrescribiendo tus colores personalizados!"
-  },
-  {
-    "objectID": "solucion-temas-css.html#el-problema",
-    "href": "solucion-temas-css.html#el-problema",
-    "title": "Solución: Temas de Bootstrap sobrescribiendo CSS personalizado",
-    "section": "",
-    "text": "Los temas de Bootstrap (como “united” y “darkly”) tienen sus propios colores y estilos que pueden sobrescribir tu CSS personalizado, especialmente los colores."
-  },
-  {
-    "objectID": "solucion-temas-css.html#soluciones-disponibles",
-    "href": "solucion-temas-css.html#soluciones-disponibles",
-    "title": "Solución: Temas de Bootstrap sobrescribiendo CSS personalizado",
-    "section": "",
-    "text": "He cambiado tu configuración a:\nformat:\n  html:\n    theme: \n      light: default\n      dark: default\n    css: styles.css\nEl tema “default” es más neutral y permite que tus estilos personalizados tengan prioridad.\n\n\n\nSi aún tienes problemas, puedes usar _quarto-sin-temas.yml:\n\nRenombra el archivo:\nmv _quarto.yml _quarto-con-temas.yml\nmv _quarto-sin-temas.yml _quarto.yml\nEste archivo no usa temas de Bootstrap, solo tu CSS personalizado.\n\n\n\n\nSi prefieres mantener los temas, agrega este CSS al inicio de tu styles.css:\n/* Forzar colores de Bootstrap */\n[data-bs-theme=\"light\"] {\n  --bs-primary: #702552 !important;\n  --bs-secondary: #2c3e50 !important;\n  --bs-link-color: #702552 !important;\n  --bs-link-hover-color: #2c3e50 !important;\n  --bs-body-color: #212529 !important;\n}\n\n[data-bs-theme=\"dark\"] {\n  --bs-primary: #a87391 !important;\n  --bs-secondary: #9b5c7f !important;\n  --bs-link-color: #a87391 !important;\n  --bs-link-hover-color: #9b5c7f !important;\n}"
-  },
-  {
-    "objectID": "solucion-temas-css.html#verificar-que-funciona",
-    "href": "solucion-temas-css.html#verificar-que-funciona",
-    "title": "Solución: Temas de Bootstrap sobrescribiendo CSS personalizado",
-    "section": "",
-    "text": "Renderiza el sitio:\nquarto preview\nVerifica estos elementos:\n\nEnlaces deben ser púrpura (#702552)\nBotones principales deben ser púrpura\nTítulos H1 deben tener borde púrpura\nNavbar brand debe ser púrpura"
-  },
-  {
-    "objectID": "solucion-temas-css.html#tips-adicionales",
-    "href": "solucion-temas-css.html#tips-adicionales",
-    "title": "Solución: Temas de Bootstrap sobrescribiendo CSS personalizado",
-    "section": "",
-    "text": "Limpiar caché: A veces necesitas limpiar y reconstruir:\nquarto clean\nquarto preview\nForzar recarga en navegador: Ctrl+Shift+R (o Cmd+Shift+R en Mac)\nInspeccionar elementos: Usa las herramientas de desarrollo del navegador (F12) para ver qué estilos se están aplicando"
-  },
-  {
-    "objectID": "solucion-temas-css.html#css-ya-actualizado",
-    "href": "solucion-temas-css.html#css-ya-actualizado",
-    "title": "Solución: Temas de Bootstrap sobrescribiendo CSS personalizado",
-    "section": "",
-    "text": "Tu styles.css ahora incluye: - !important en reglas críticas - Selectores más específicos - Variables CSS con prioridad - Sobrescritura de clases de Bootstrap\n¡Esto debería resolver el problema de los temas sobrescribiendo tus colores personalizados!"
-  },
-  {
-    "objectID": "quienes-somos.html",
-    "href": "quienes-somos.html",
-    "title": "Quiénes Somos",
-    "section": "",
-    "text": "RSE Argentina es una iniciativa comunitaria coordinada por un equipo de voluntarios comprometidos con visibilizar y fortalecer el rol del software en la investigación.\n\n\n\n\nCo-coordinadora\nLicenciada en sistemas de Información recibida en la UNNE, actualmente cursando un máster en Tecnologías de la Información, con varios años de experiencia en distintos roles técnicos, helpdesk, analista funcional, diseño de base de datos y desarrolladora de software. Apasionada por el código reproducible y la ciencia abierta.\n\n📧 patricia.andrea.loto@gmail.com\n🔗 GitHub\n🔗 LinkedIn\n\n\n\n\nColaboradora\nSocióloga & Analista de Estadísticas de Población.\n\n📧 andrea.gomezv11@gmail.com\n🔗 [GitHub](https://github.com/SoyAndrea)\n🔗 LinkedIn\n\nRSE Argentina cuenta con una red de comunidades amigas:\n\nR en Buenos Aires\nRSE en Chile\nROpenSci\nR-Ladies Rcia-Ctes"
-  },
-  {
-    "objectID": "quienes-somos.html#coordinación",
-    "href": "quienes-somos.html#coordinación",
-    "title": "Quiénes Somos",
-    "section": "",
-    "text": "RSE Argentina es una iniciativa comunitaria coordinada por un equipo de voluntarios comprometidos con visibilizar y fortalecer el rol del software en la investigación.\n\n\n\n\nCo-coordinadora\nLicenciada en sistemas de Información recibida en la UNNE, actualmente cursando un máster en Tecnologías de la Información, con varios años de experiencia en distintos roles técnicos, helpdesk, analista funcional, diseño de base de datos y desarrolladora de software. Apasionada por el código reproducible y la ciencia abierta.\n\n📧 patricia.andrea.loto@gmail.com\n🔗 GitHub\n🔗 LinkedIn\n\n\n\n\nColaboradora\nSocióloga & Analista de Estadísticas de Población.\n\n📧 andrea.gomezv11@gmail.com\n🔗 [GitHub](https://github.com/SoyAndrea)\n🔗 LinkedIn\n\nRSE Argentina cuenta con una red de comunidades amigas:\n\nR en Buenos Aires\nRSE en Chile\nROpenSci\nR-Ladies Rcia-Ctes"
-  },
-  {
-    "objectID": "quienes-somos.html#historia",
-    "href": "quienes-somos.html#historia",
-    "title": "Quiénes Somos",
-    "section": "Historia",
-    "text": "Historia\nLa idea de formar RSE Argentina surgió en 2025 durante la conferencia RSECON25 realizada en Warwick. Inspirados por iniciativas similares en otros países, y sabiendo que en nuestra región por el momento solo existe un grupo regional, decidimos crear un espacio para:\n\nCompartir experiencias y desafíos comunes\nPromover el reconocimiento del trabajo RSE\nEstablecer conexiones con la red internacional de RSE\n\n\nHitos importantes\n\nSeptiembre 2025: Ideas y sinergia para crear el grupo en Argentina\nOctubre 2025: Charla inicial para dar a conocer la RSE en nuestra región\nNoviembre 2025: Lanzamiento oficial del sitio web\nAbril - Julio 2026: Serie de Charlas sobre RSE"
-  },
-  {
-    "objectID": "quienes-somos.html#apoyos",
-    "href": "quienes-somos.html#apoyos",
-    "title": "Quiénes Somos",
-    "section": "Apoyos",
-    "text": "Apoyos\nAgradecemos el apoyo de:\n\nRSECON25: Por la inspiración y conectarnos con la comunidad global\nRSE Chile: Por su empuje y colaboración regional\nSSI: Por los recursos compartidos"
-  },
-  {
-    "objectID": "quienes-somos.html#gobernanza",
-    "href": "quienes-somos.html#gobernanza",
-    "title": "Quiénes Somos",
-    "section": "Gobernanza",
-    "text": "Gobernanza\nRSE Argentina funciona como una comunidad horizontal con decisiones tomadas por consenso. Nuestros principios son:\n\nInclusión: Todas las personas interesadas en la temática son bienvenidas sin importar su nivel o experiencia\nColaboración: Compartimos conocimientos abiertamente\nDiversidad: Valoramos diferentes perspectivas y experiencias"
-  },
-  {
-    "objectID": "para_futuras_mejoras/eventos - copia.html",
-    "href": "para_futuras_mejoras/eventos - copia.html",
-    "title": "Eventos",
-    "section": "",
-    "text": "📅 Fecha: 15 de abril de 2025, 17:00 hs (UTC-3)\n📍 Modalidad: Virtual (Zoom)\n🎯 Dirigido a: RSEs de todos los niveles\nEn este meetup exploraremos diferentes herramientas y estrategias para documentar efectivamente el software de investigación. Compartiremos experiencias con Sphinx, MkDocs, Quarto y más.\nInscribirse | Agregar al calendario\n\n\n\n📅 Fecha: 8-9 de mayo de 2025\n📍 Lugar: Universidad de Buenos Aires, Pabellón 1\n🎯 Cupos: 30 participantes\n💰 Costo: Gratuito con inscripción previa\nTaller práctico de dos días para aprender Git y GitHub en el contexto de proyectos de investigación. No se requiere experiencia previa.\nMás información e inscripción"
-  },
-  {
-    "objectID": "para_futuras_mejoras/eventos - copia.html#próximos-eventos",
-    "href": "para_futuras_mejoras/eventos - copia.html#próximos-eventos",
-    "title": "Eventos",
-    "section": "",
-    "text": "📅 Fecha: 15 de abril de 2025, 17:00 hs (UTC-3)\n📍 Modalidad: Virtual (Zoom)\n🎯 Dirigido a: RSEs de todos los niveles\nEn este meetup exploraremos diferentes herramientas y estrategias para documentar efectivamente el software de investigación. Compartiremos experiencias con Sphinx, MkDocs, Quarto y más.\nInscribirse | Agregar al calendario\n\n\n\n📅 Fecha: 8-9 de mayo de 2025\n📍 Lugar: Universidad de Buenos Aires, Pabellón 1\n🎯 Cupos: 30 participantes\n💰 Costo: Gratuito con inscripción previa\nTaller práctico de dos días para aprender Git y GitHub en el contexto de proyectos de investigación. No se requiere experiencia previa.\nMás información e inscripción"
-  },
-  {
-    "objectID": "para_futuras_mejoras/eventos - copia.html#eventos-recurrentes",
-    "href": "para_futuras_mejoras/eventos - copia.html#eventos-recurrentes",
-    "title": "Eventos",
-    "section": "Eventos recurrentes",
-    "text": "Eventos recurrentes\n\nCafés virtuales RSE\n🗓️ Todos los primeros viernes de mes, 16:00 hs\nEspacio informal para conversar sobre desafíos, compartir tips y conocer a otros RSEs. Sin agenda fija, solo buena charla y café (o mate).\nUnirse a la lista de correo para recibir el link\n\n\nClub de lectura\n🗓️ Tercer miércoles de cada mes, 18:00 hs\nDiscutimos papers, libros y recursos sobre desarrollo de software científico. Este mes: “Best Practices for Scientific Computing” de Wilson et al."
-  },
-  {
-    "objectID": "para_futuras_mejoras/eventos - copia.html#eventos-pasados",
-    "href": "para_futuras_mejoras/eventos - copia.html#eventos-pasados",
-    "title": "Eventos",
-    "section": "Eventos pasados",
-    "text": "Eventos pasados\n\n2025\n\nWorkshop: Reproducibilidad computacional en R\nMarzo 2025 - 40 participantes\nTaller hands-on sobre cómo hacer investigación reproducible usando R, RMarkdown y contenedores. Ver materiales\n\n\nCharla: El rol del RSE en proyectos interdisciplinarios\nFebrero 2025 - 65 asistentes virtuales\nPanel con RSEs de neurociencias, clima y ciencias sociales compartiendo experiencias sobre colaboración interdisciplinaria. Ver grabación\n\n\n\n2024\n\nEncuentro inaugural RSE Argentina\nOctubre 2024 - 50+ participantes\nNuestro primer encuentro virtual donde discutimos la visión para RSE Argentina y las necesidades de la comunidad. Ver resumen"
-  },
-  {
-    "objectID": "para_futuras_mejoras/eventos - copia.html#proponer-un-evento",
-    "href": "para_futuras_mejoras/eventos - copia.html#proponer-un-evento",
-    "title": "Eventos",
-    "section": "Proponer un evento",
-    "text": "Proponer un evento\n¿Tienes una idea para un evento? ¡Nos encantaría escucharte!\nLos eventos pueden ser: - Charlas técnicas - Talleres prácticos - Paneles de discusión - Hackatones - Sprints de documentación - Encuentros sociales\nProponer un evento"
-  },
-  {
-    "objectID": "para_futuras_mejoras/eventos - copia.html#código-de-conducta-para-eventos",
-    "href": "para_futuras_mejoras/eventos - copia.html#código-de-conducta-para-eventos",
-    "title": "Eventos",
-    "section": "Código de conducta para eventos",
-    "text": "Código de conducta para eventos\nTodos nuestros eventos se rigen por nuestro Código de Conducta. Buscamos crear espacios seguros, inclusivos y acogedores para todas las personas."
-  },
-  {
-    "objectID": "para_futuras_mejoras/eventos - copia.html#calendario",
-    "href": "para_futuras_mejoras/eventos - copia.html#calendario",
-    "title": "Eventos",
-    "section": "Calendario",
-    "text": "Calendario"
-  },
-  {
-    "objectID": "para_futuras_mejoras/eventos - copia.html#patrocinios",
-    "href": "para_futuras_mejoras/eventos - copia.html#patrocinios",
-    "title": "Eventos",
-    "section": "Patrocinios",
-    "text": "Patrocinios\nSi tu organización está interesada en patrocinar nuestros eventos, contáctanos. Los fondos se destinan a:\n\nCafé y refrigerios para eventos presenciales\nLicencias de herramientas para talleres\nBecas de transporte para asistentes\nMateriales y merchandising"
-  },
-  {
-    "objectID": "para_futuras_mejoras/codigo-conducta.html",
-    "href": "para_futuras_mejoras/codigo-conducta.html",
-    "title": "Código de Conducta",
-    "section": "",
-    "text": "En RSE Argentina nos comprometemos a fomentar un ambiente abierto, acogedor, diverso, inclusivo y saludable para toda nuestra comunidad."
-  },
-  {
-    "objectID": "para_futuras_mejoras/codigo-conducta.html#nuestro-compromiso",
-    "href": "para_futuras_mejoras/codigo-conducta.html#nuestro-compromiso",
-    "title": "Código de Conducta",
-    "section": "",
-    "text": "En RSE Argentina nos comprometemos a fomentar un ambiente abierto, acogedor, diverso, inclusivo y saludable para toda nuestra comunidad."
-  },
-  {
-    "objectID": "para_futuras_mejoras/codigo-conducta.html#nuestros-estándares",
-    "href": "para_futuras_mejoras/codigo-conducta.html#nuestros-estándares",
-    "title": "Código de Conducta",
-    "section": "Nuestros estándares",
-    "text": "Nuestros estándares\n\nComportamientos que contribuyen a un ambiente positivo:\n\nDemostrar empatía y amabilidad hacia otras personas\nRespetar diferentes opiniones, puntos de vista y experiencias\nDar y aceptar constructivamente retroalimentación\nAceptar la responsabilidad por nuestros errores, disculparnos con quienes se vean afectados y aprender de la experiencia\nCentrarnos en lo que es mejor no solo para nosotros como individuos, sino para la comunidad en general\n\n\n\nComportamientos inaceptables:\n\nEl uso de lenguaje o imágenes sexualizadas y atención o avances sexuales de cualquier tipo\nTrolling, comentarios insultantes o despectivos, y ataques personales o políticos\nAcoso público o privado\nPublicar información privada de otros, como una dirección física o de correo electrónico, sin su permiso explícito\nOtras conductas que puedan considerarse razonablemente inapropiadas en un entorno profesional"
-  },
-  {
-    "objectID": "para_futuras_mejoras/codigo-conducta.html#aplicación",
-    "href": "para_futuras_mejoras/codigo-conducta.html#aplicación",
-    "title": "Código de Conducta",
-    "section": "Aplicación",
-    "text": "Aplicación\nLos administradores de la comunidad son responsables de aclarar y aplicar nuestros estándares de comportamiento aceptable y tomarán medidas correctivas apropiadas y justas en respuesta a cualquier comportamiento que consideren inapropiado, amenazante, ofensivo o dañino.\nLos administradores de la comunidad tienen el derecho y la responsabilidad de eliminar, editar o rechazar comentarios, commits, código, ediciones de wiki, issues y otras contribuciones que no estén alineadas con este Código de Conducta, y comunicarán las razones de las decisiones de moderación cuando sea apropiado."
-  },
-  {
-    "objectID": "para_futuras_mejoras/codigo-conducta.html#alcance",
-    "href": "para_futuras_mejoras/codigo-conducta.html#alcance",
-    "title": "Código de Conducta",
-    "section": "Alcance",
-    "text": "Alcance\nEste código de conducta aplica tanto dentro de los espacios de la comunidad como en espacios públicos cuando un individuo representa a la comunidad. Ejemplos de representación de nuestra comunidad incluyen el uso de una dirección de correo electrónico oficial, publicaciones a través de una cuenta oficial de redes sociales, o actuar como representante designado en un evento en línea o fuera de línea."
-  },
-  {
-    "objectID": "para_futuras_mejoras/codigo-conducta.html#reportar-incidentes",
-    "href": "para_futuras_mejoras/codigo-conducta.html#reportar-incidentes",
-    "title": "Código de Conducta",
-    "section": "Reportar incidentes",
-    "text": "Reportar incidentes\nLos casos de comportamiento abusivo, acosador o inaceptable pueden ser reportados a los líderes de la comunidad responsables de la aplicación en conducta@rse-argentina.org.\nTodas las quejas serán revisadas e investigadas de manera oportuna y justa. Todos los líderes de la comunidad están obligados a respetar la privacidad y seguridad de quien reporte un incidente."
-  },
-  {
-    "objectID": "para_futuras_mejoras/codigo-conducta.html#guías-de-aplicación",
-    "href": "para_futuras_mejoras/codigo-conducta.html#guías-de-aplicación",
-    "title": "Código de Conducta",
-    "section": "Guías de aplicación",
-    "text": "Guías de aplicación\nLos líderes de la comunidad seguirán estas Guías de Impacto Comunitario para determinar las consecuencias de cualquier acción que consideren en violación de este Código de Conducta:\n\n1. Corrección\nImpacto comunitario: Uso de lenguaje inapropiado u otro comportamiento considerado poco profesional o no bienvenido en la comunidad.\nConsecuencia: Una advertencia privada por escrito de los líderes de la comunidad, proporcionando claridad sobre la naturaleza de la violación y una explicación de por qué el comportamiento fue inapropiado. Se puede solicitar una disculpa pública.\n\n\n2. Advertencia\nImpacto comunitario: Una violación a través de un incidente único o una serie de acciones.\nConsecuencia: Una advertencia con consecuencias para el comportamiento continuo. Sin interacción con las personas involucradas, incluida la interacción no solicitada con quienes aplican el Código de Conducta, durante un período de tiempo específico. Esto incluye evitar interacciones en espacios comunitarios, así como canales externos como las redes sociales. Violar estos términos puede llevar a una prohibición temporal o permanente.\n\n\n3. Prohibición temporal\nImpacto comunitario: Una violación grave de los estándares de la comunidad, incluido el comportamiento inapropiado sostenido.\nConsecuencia: Una prohibición temporal de cualquier tipo de interacción o comunicación pública con la comunidad durante un período de tiempo específico. No se permite ninguna interacción pública o privada con las personas involucradas, incluida la interacción no solicitada con quienes aplican el Código de Conducta, durante este período. Violar estos términos puede llevar a una prohibición permanente.\n\n\n4. Prohibición permanente\nImpacto comunitario: Demostrar un patrón de violación de los estándares de la comunidad, incluido el comportamiento inapropiado sostenido, el acoso a un individuo o la agresión o desprecio hacia clases de individuos.\nConsecuencia: Una prohibición permanente de cualquier tipo de interacción pública dentro de la comunidad."
-  },
-  {
-    "objectID": "para_futuras_mejoras/codigo-conducta.html#atribución",
-    "href": "para_futuras_mejoras/codigo-conducta.html#atribución",
-    "title": "Código de Conducta",
-    "section": "Atribución",
-    "text": "Atribución\nEste Código de Conducta es una adaptación del Contributor Covenant, versión 2.1, disponible en https://www.contributor-covenant.org/es/version/2/1/code_of_conduct.html\nLas Guías de Impacto Comunitario fueron inspiradas por la escalera de aplicación del código de conducta de Mozilla."
-  },
-  {
-    "objectID": "para_futuras_mejoras/codigo-conducta.html#preguntas-frecuentes",
-    "href": "para_futuras_mejoras/codigo-conducta.html#preguntas-frecuentes",
-    "title": "Código de Conducta",
-    "section": "Preguntas frecuentes",
-    "text": "Preguntas frecuentes\nPara respuestas a preguntas comunes sobre este código de conducta, consulta las FAQ en https://www.contributor-covenant.org/faq. Las traducciones están disponibles en https://www.contributor-covenant.org/translations.\n\nÚltima actualización: Enero 2025"
-  },
-  {
-    "objectID": "contacto.html",
-    "href": "contacto.html",
-    "title": "Contacto",
-    "section": "",
-    "text": "Hay muchas formas de conectarte con nuestra comunidad."
-  },
-  {
-    "objectID": "contacto.html#conéctate-con-rse-argentina",
-    "href": "contacto.html#conéctate-con-rse-argentina",
-    "title": "Contacto",
-    "section": "",
-    "text": "Hay muchas formas de conectarte con nuestra comunidad."
-  },
-  {
-    "objectID": "contacto.html#contacto-directo",
-    "href": "contacto.html#contacto-directo",
-    "title": "Contacto",
-    "section": "📧 Contacto directo",
-    "text": "📧 Contacto directo\nPara consultas específicas, colaboraciones o propuestas:\nEmail general: rse.comunidad.argentina@gmail.com.ar"
-  },
-  {
-    "objectID": "contacto.html#redes-sociales",
-    "href": "contacto.html#redes-sociales",
-    "title": "Contacto",
-    "section": "🌐 Redes sociales",
-    "text": "🌐 Redes sociales\nSíguenos para estar al día con noticias y eventos:\n\nLinkedIn\nRSE Argentina"
-  },
-  {
-    "objectID": "contacto.html#encuentros-regionales",
-    "href": "contacto.html#encuentros-regionales",
-    "title": "Contacto",
-    "section": "📍 Encuentros regionales",
-    "text": "📍 Encuentros regionales\nSi querés organizar uno en tu ciudad, ¡contáctanos!"
-  },
-  {
-    "objectID": "contacto.html#colabora-con-nosotros",
-    "href": "contacto.html#colabora-con-nosotros",
-    "title": "Contacto",
-    "section": "🤝 Colabora con nosotros",
-    "text": "🤝 Colabora con nosotros\n\nFormas de colaborar:\n\nOrganizar eventos: Talleres, charlas, meetups\nCrear contenido: Tutoriales y blog posts\nMentoría: Apoyar a nuevos RSEs\nDifusión: Compartir nuestros eventos\n\n\n\n\n\n\n\n\n¿No sabés por dónde empezar?\n\n\n\n\n\n\nAsistí a nuestros próximos eventos [serie RSE]: PRÓXIMAMENTE\n¡Seguínos en redes!"
-  },
-  {
-    "objectID": "blog/encuentro-inaugural.html",
-    "href": "blog/encuentro-inaugural.html",
-    "title": "Encuentro Inaugural de RSE Argentina",
-    "section": "",
-    "text": "El pasado 10 de octubre de 2024 celebramos nuestro primer encuentro virtual con más de 50 participantes de todo el país. Fue una jornada emocionante donde sentamos las bases de lo que será RSE Argentina."
-  },
-  {
-    "objectID": "blog/encuentro-inaugural.html#lo-que-discutimos",
-    "href": "blog/encuentro-inaugural.html#lo-que-discutimos",
-    "title": "Encuentro Inaugural de RSE Argentina",
-    "section": "Lo que discutimos",
-    "text": "Lo que discutimos\n\n¿Qué significa ser RSE en Argentina?\nDurante la primera hora, compartimos experiencias sobre nuestros roles actuales:\n\nEl 60% de los participantes dedica más del 50% de su tiempo a escribir código\nSolo el 20% tiene “software” o “programación” en su título laboral\nEl 85% aprendió a programar de forma autodidacta o con cursos informales\n\n\n\nDesafíos identificados\nLos principales desafíos que enfrentamos como comunidad:\n\nReconocimiento institucional: El trabajo de desarrollo de software no es valorado en evaluaciones\nFormación: Falta de capacitación formal en buenas prácticas de software científico\nCarrera profesional: No hay un camino claro para RSEs en instituciones de investigación\nSostenibilidad: El conocimiento se pierde cuando los investigadores cambian de proyecto\n\n\n\nPróximos pasos acordados\n\nCrear canales de comunicación (Slack, lista de correo)\nOrganizar meetups mensuales virtuales\nDesarrollar este sitio web\nConectar con la red internacional de RSE"
-  },
-  {
-    "objectID": "blog/encuentro-inaugural.html#agradecimientos",
-    "href": "blog/encuentro-inaugural.html#agradecimientos",
-    "title": "Encuentro Inaugural de RSE Argentina",
-    "section": "Agradecimientos",
-    "text": "Agradecimientos\nQueremos agradecer especialmente a:\n\nRSE Chile por compartir su experiencia\nTodos los participantes por su entusiasmo\nLas instituciones que difundieron el evento"
-  },
-  {
-    "objectID": "blog/encuentro-inaugural.html#sumate",
-    "href": "blog/encuentro-inaugural.html#sumate",
-    "title": "Encuentro Inaugural de RSE Argentina",
-    "section": "¡Sumate!",
-    "text": "¡Sumate!\nSi no pudiste participar, no te preocupes. Grabamos la sesión y pronto organizaremos más encuentros. Únete a nuestra lista de correo para estar al tanto.\n\n¿Tenés algo para compartir? Escribí tu propio post para el blog. Instrucciones aquí"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Research Software Engineering en Argentina",
-    "section": "",
-    "text": "Research Software Engineering (RSE) es un campo emergente que reconoce la importancia fundamental del software en la investigación moderna. Los Research Software Engineers son profesionales que combinan conocimientos de desarrollo de software con comprensión profunda de la investigación académica.\n\n\nSi te identificas con alguna de estas actividades, probablemente eres un Research Software Engineer:\n\nDesarrollas o mantienes software utilizado en proyectos de investigación\nEscribes código para procesar, analizar o visualizar datos científicos\nImplementas algoritmos y modelos computacionales para investigación\nOptimizas código existente para mejorar su rendimiento\nDocumentas y haces más reproducible el software de investigación\nEnseñas buenas prácticas de programación a investigadores"
-  },
-  {
-    "objectID": "index.html#qué-es-research-software-engineering",
-    "href": "index.html#qué-es-research-software-engineering",
-    "title": "Research Software Engineering en Argentina",
-    "section": "",
-    "text": "Research Software Engineering (RSE) es un campo emergente que reconoce la importancia fundamental del software en la investigación moderna. Los Research Software Engineers son profesionales que combinan conocimientos de desarrollo de software con comprensión profunda de la investigación académica.\n\n\nSi te identificas con alguna de estas actividades, probablemente eres un Research Software Engineer:\n\nDesarrollas o mantienes software utilizado en proyectos de investigación\nEscribes código para procesar, analizar o visualizar datos científicos\nImplementas algoritmos y modelos computacionales para investigación\nOptimizas código existente para mejorar su rendimiento\nDocumentas y haces más reproducible el software de investigación\nEnseñas buenas prácticas de programación a investigadores"
-  },
-  {
-    "objectID": "index.html#por-qué-rse-argentina",
-    "href": "index.html#por-qué-rse-argentina",
-    "title": "Research Software Engineering en Argentina",
-    "section": "¿Por qué RSE Argentina?",
-    "text": "¿Por qué RSE Argentina?\nArgentina tiene una rica tradición en investigación científica y tecnológica, con instituciones de excelencia como CONICET, universidades nacionales y centros de investigación. Sin embargo, al igual que en otros países, el rol de quienes desarrollan software de investigación no siempre es reconocido adecuadamente.\n\nNuestra misión\nRSE Argentina surge para:\n\nVisibilizar el trabajo de quienes desarrollan software en el contexto de investigación\nConectar a profesionales que comparten desafíos similares\nPromover el reconocimiento institucional del rol RSE\nCompartir conocimientos y buenas prácticas\n\n\n\nEl contexto argentino\nEn Argentina, muchos investigadores, becarios doctorales, postdocs y personal de apoyo dedican gran parte de su tiempo al desarrollo de software, pero:\n\nEsta labor no siempre es valorada en las evaluaciones académicas\nFalta formación específica en desarrollo de software científico\nNo existe un camino claro de desarrollo profesional para RSEs\nEl conocimiento técnico se pierde cuando los investigadores cambian de proyecto"
-  },
-  {
-    "objectID": "index.html#únete-a-la-comunidad",
-    "href": "index.html#únete-a-la-comunidad",
-    "title": "Research Software Engineering en Argentina",
-    "section": "Únete a la comunidad",
-    "text": "Únete a la comunidad\nEstamos construyendo una comunidad inclusiva y colaborativa. No importa si:\n\nEres autodidacta o tienes formación formal en computación\nTrabajas en el sector público, privado o académico\nDesarrollas software complejo o scripts simples\nTienes años de experiencia o recién empiezas\n\n¡Todos los que contribuyen con software a la investigación son bienvenidos!\n\n\n\n\n\n\n¿Sabías que…?\n\n\n\nEl movimiento RSE comenzó en 2012 en Reino Unido y ahora hay grupos activos en más de 20 países, incluyendo Chile, en Latinoamérica."
-  },
-  {
-    "objectID": "index.html#próximos-pasos",
-    "href": "index.html#próximos-pasos",
-    "title": "Research Software Engineering en Argentina",
-    "section": "Próximos pasos",
-    "text": "Próximos pasos\n\nConoce al equipo que está impulsando esta iniciativa\nExplora recursos para mejorar tus habilidades\nContáctanos para involucrarte más activamente\nParticipa en nuestros eventos: próximamente tendremos más novedades"
-  },
-  {
-    "objectID": "para_futuras_mejoras/contacto.html",
-    "href": "para_futuras_mejoras/contacto.html",
-    "title": "Contacto",
-    "section": "",
-    "text": "Hay muchas formas de conectarte con nuestra comunidad."
-  },
-  {
-    "objectID": "para_futuras_mejoras/contacto.html#conéctate-con-rse-argentina",
-    "href": "para_futuras_mejoras/contacto.html#conéctate-con-rse-argentina",
-    "title": "Contacto",
-    "section": "",
-    "text": "Hay muchas formas de conectarte con nuestra comunidad."
-  },
-  {
-    "objectID": "para_futuras_mejoras/contacto.html#contacto-directo",
-    "href": "para_futuras_mejoras/contacto.html#contacto-directo",
-    "title": "Contacto",
-    "section": "📧 Contacto directo",
-    "text": "📧 Contacto directo\nPara consultas específicas, colaboraciones o propuestas:\nEmail general: rse.argentina@gmail.com.ar"
-  },
-  {
-    "objectID": "para_futuras_mejoras/contacto.html#redes-sociales",
-    "href": "para_futuras_mejoras/contacto.html#redes-sociales",
-    "title": "Contacto",
-    "section": "🌐 Redes sociales",
-    "text": "🌐 Redes sociales\nSíguenos para estar al día con noticias y eventos:\n\nLinkedIn\nRSE Argentina"
-  },
-  {
-    "objectID": "para_futuras_mejoras/contacto.html#encuentros-regionales",
-    "href": "para_futuras_mejoras/contacto.html#encuentros-regionales",
-    "title": "Contacto",
-    "section": "📍 Encuentros regionales",
-    "text": "📍 Encuentros regionales\nOrganizamos encuentros presenciales en diferentes ciudades. Si querés organizar uno en tu ciudad, ¡contáctanos!\n\nNodos activos:\n\nBuenos Aires: Encuentros mensuales en CABA\nChaco: Reuniones bimestrales\n\nVer calendario de encuentros regionales"
-  },
-  {
-    "objectID": "para_futuras_mejoras/contacto.html#colabora-con-nosotros",
-    "href": "para_futuras_mejoras/contacto.html#colabora-con-nosotros",
-    "title": "Contacto",
-    "section": "🤝 Colabora con nosotros",
-    "text": "🤝 Colabora con nosotros\n\nFormas de colaborar:\n\nOrganizar eventos: Talleres, charlas, meetups\nCrear contenido: Tutoriales y blog posts\nMentoría: Apoyar a nuevos RSEs\nDifusión: Compartir nuestros eventos\n\nFormulario de voluntarios\n\n\n\n\n\n\n\n\n\n\n\n\n\n¿No sabés por dónde empezar?\n\n\n\n\n\n\nAsistí a nuestros próximos eventos serie RSE\n¡Seguínos en redes!"
-  },
-  {
-    "objectID": "para_futuras_mejoras/recursos.html",
-    "href": "para_futuras_mejoras/recursos.html",
-    "title": "Recursos",
-    "section": "",
-    "text": "📚 Introducción a RSE - Software Sustainability Institute\n🎓 The Carpentries - Lecciones sobre herramientas fundamentales para investigación computacional\n📖 Good Enough Practices in Scientific Computing - Paper fundamental sobre buenas prácticas\n\n\n\n\n\n🐍 Scientific Python Tutorials - Tutoriales de Python para ciencia\n📊 R for Data Science - Libro online gratuito sobre R\n🔧 Research Software Engineering with Python - Curso completo del Alan Turing Institute\n📦 Reproducible Research in R - Paquetes de rOpenSci"
-  },
-  {
-    "objectID": "para_futuras_mejoras/recursos.html#guías-y-tutoriales",
-    "href": "para_futuras_mejoras/recursos.html#guías-y-tutoriales",
-    "title": "Recursos",
-    "section": "",
-    "text": "📚 Introducción a RSE - Software Sustainability Institute\n🎓 The Carpentries - Lecciones sobre herramientas fundamentales para investigación computacional\n📖 Good Enough Practices in Scientific Computing - Paper fundamental sobre buenas prácticas\n\n\n\n\n\n🐍 Scientific Python Tutorials - Tutoriales de Python para ciencia\n📊 R for Data Science - Libro online gratuito sobre R\n🔧 Research Software Engineering with Python - Curso completo del Alan Turing Institute\n📦 Reproducible Research in R - Paquetes de rOpenSci"
-  },
-  {
-    "objectID": "para_futuras_mejoras/recursos.html#herramientas-recomendadas",
-    "href": "para_futuras_mejoras/recursos.html#herramientas-recomendadas",
-    "title": "Recursos",
-    "section": "Herramientas recomendadas",
-    "text": "Herramientas recomendadas\n\nControl de versiones\n\nGit - Sistema de control de versiones distribuido\nGitHub/GitLab - Plataformas de colaboración\n\n\n\nDocumentación\n\nQuarto - Publicación científica y técnica\nSphinx - Para documentación de Python\npkgdown - Para paquetes de R\nJupyter Book - Para cuadernos computacionales\n\n\n\nTesting y CI/CD\n\npytest / testthat - Frameworks de testing\nGitHub Actions - Integración continua\n\n\n\nGestión de entornos\n\nconda / mamba - Gestión de paquetes y entornos\nrenv - Entornos reproducibles en R"
-  },
-  {
-    "objectID": "para_futuras_mejoras/recursos.html#publicaciones-destacadas",
-    "href": "para_futuras_mejoras/recursos.html#publicaciones-destacadas",
-    "title": "Recursos",
-    "section": "Publicaciones destacadas",
-    "text": "Publicaciones destacadas\n\nPapers sobre RSE\n\nBaxter, S. M., et al. (2012). “The Research Software Engineer”. Digital Research Conference.\nHettrick, S. (2016). “Research Software Engineers: State of the Nation Report 2017”\nKatz, D. S., et al. (2019). “Research Software Sustainability: Lessons Learned”"
-  },
-  {
-    "objectID": "para_futuras_mejoras/recursos.html#materiales-de-rse-argentina",
-    "href": "para_futuras_mejoras/recursos.html#materiales-de-rse-argentina",
-    "title": "Recursos",
-    "section": "Materiales de RSE Argentina",
-    "text": "Materiales de RSE Argentina\n\nPresentaciones: ¡PROXIMAMENTE!"
-  },
-  {
-    "objectID": "para_futuras_mejoras/recursos.html#contribuir-recursos",
-    "href": "para_futuras_mejoras/recursos.html#contribuir-recursos",
-    "title": "Recursos",
-    "section": "Contribuir recursos",
-    "text": "Contribuir recursos\n¿Conoces algún recurso valioso que no está en la lista? ¡Ayúdanos a mejorar esta sección!\nSugerir un recurso"
-  },
-  {
     "objectID": "recursos.html",
     "href": "recursos.html",
     "title": "Recursos",
     "section": "",
-    "text": "📚 Introducción a RSE - Software Sustainability Institute\n🎓 The Carpentries - Lecciones sobre herramientas fundamentales para investigación computacional\n📖 Good Enough Practices in Scientific Computing - Paper fundamental sobre buenas prácticas\n\n\n\n\n\n🐍 Scientific Python Tutorials - Tutoriales de Python para ciencia\n📊 R for Data Science - Libro online gratuito sobre R\n🔧 Research Software Engineering with Python - Curso completo del Alan Turing Institute\n📦 Reproducible Research in R - Paquetes de rOpenSci"
+    "text": "📚 A not-so-brief history of Research Software Engineers - Una historia no tan breve de la ingeniería de software de investigación por el Software Sustainability Institute\n🎓 Good Enough Practices in Scientific Computing - Lección sobre buenas prácticas para computación científica por The Carpentries\n📖 Good enough practices in scientific computing - Paper fundamental sobre buenas prácticas en computación científica\n\n\n\n\n\n🐍 Scientific Python Tutorials - Tutoriales de Python Científico\n📊 R for Data Science - Libro sobre R para Ciencia de datos\n🔧 Research Software Engineering with Python - Curso completo de Ingeniería de Software de investigación con python por el Alan Turing Institute\n📦 Reproducible Research in R - Investigación rerpoducible en R por rOpenSci"
   },
   {
     "objectID": "recursos.html#guías-y-tutoriales",
     "href": "recursos.html#guías-y-tutoriales",
     "title": "Recursos",
     "section": "",
-    "text": "📚 Introducción a RSE - Software Sustainability Institute\n🎓 The Carpentries - Lecciones sobre herramientas fundamentales para investigación computacional\n📖 Good Enough Practices in Scientific Computing - Paper fundamental sobre buenas prácticas\n\n\n\n\n\n🐍 Scientific Python Tutorials - Tutoriales de Python para ciencia\n📊 R for Data Science - Libro online gratuito sobre R\n🔧 Research Software Engineering with Python - Curso completo del Alan Turing Institute\n📦 Reproducible Research in R - Paquetes de rOpenSci"
+    "text": "📚 A not-so-brief history of Research Software Engineers - Una historia no tan breve de la ingeniería de software de investigación por el Software Sustainability Institute\n🎓 Good Enough Practices in Scientific Computing - Lección sobre buenas prácticas para computación científica por The Carpentries\n📖 Good enough practices in scientific computing - Paper fundamental sobre buenas prácticas en computación científica\n\n\n\n\n\n🐍 Scientific Python Tutorials - Tutoriales de Python Científico\n📊 R for Data Science - Libro sobre R para Ciencia de datos\n🔧 Research Software Engineering with Python - Curso completo de Ingeniería de Software de investigación con python por el Alan Turing Institute\n📦 Reproducible Research in R - Investigación rerpoducible en R por rOpenSci"
   },
   {
     "objectID": "recursos.html#materiales-de-rse-argentina",
@@ -410,6 +25,132 @@
     "href": "recursos.html#contribuir-recursos",
     "title": "Recursos",
     "section": "Contribuir recursos",
-    "text": "Contribuir recursos\n¿Conoces algún recurso valioso que no está en la lista? ¡Ayúdanos a mejorar esta sección!\nSugerir un recurso"
+    "text": "Contribuir recursos\n¿Conoces algún recurso valioso que no está en la lista? ¡Ayúdanos a mejorar esta sección abriendo un issue y sumando tu sugerencia!"
+  },
+  {
+    "objectID": "que-es-rse.html",
+    "href": "que-es-rse.html",
+    "title": "¿Qué es RSE?",
+    "section": "",
+    "text": "Research Software Engineering (o RSE, por sus siglás en inglés) es un campo emergente que reconoce la importancia fundamental del software en la investigación moderna. Los Research Software Engineers son profesionales que combinan conocimientos de desarrollo de software con comprensión de la investigación académica.\n\n\nSi te identificas con alguna de estas actividades, probablemente eres un Research Software Engineer:\n\nDesarrollas o mantienes software utilizado en proyectos de investigación\nEscribes código para procesar, analizar o visualizar datos científicos\nImplementas algoritmos y modelos computacionales para investigación\nOptimizas código existente para mejorar su rendimiento\nDocumentas y haces más reproducible el software de investigación\nEnseñas buenas prácticas de programación a investigadores"
+  },
+  {
+    "objectID": "que-es-rse.html#research-software-engineering",
+    "href": "que-es-rse.html#research-software-engineering",
+    "title": "¿Qué es RSE?",
+    "section": "",
+    "text": "Research Software Engineering (o RSE, por sus siglás en inglés) es un campo emergente que reconoce la importancia fundamental del software en la investigación moderna. Los Research Software Engineers son profesionales que combinan conocimientos de desarrollo de software con comprensión de la investigación académica.\n\n\nSi te identificas con alguna de estas actividades, probablemente eres un Research Software Engineer:\n\nDesarrollas o mantienes software utilizado en proyectos de investigación\nEscribes código para procesar, analizar o visualizar datos científicos\nImplementas algoritmos y modelos computacionales para investigación\nOptimizas código existente para mejorar su rendimiento\nDocumentas y haces más reproducible el software de investigación\nEnseñas buenas prácticas de programación a investigadores"
+  },
+  {
+    "objectID": "que-es-rse.html#por-qué-rse-argentina",
+    "href": "que-es-rse.html#por-qué-rse-argentina",
+    "title": "¿Qué es RSE?",
+    "section": "¿Por qué RSE Argentina?",
+    "text": "¿Por qué RSE Argentina?\nArgentina tiene una rica tradición en investigación científica y tecnológica, con instituciones de excelencia como el CONICET, universidades nacionales y centros de investigación. Sin embargo, al igual que en otros países, el rol de quienes desarrollan software de investigación no siempre es reconocido adecuadamente.\n\nNuestra misión\nRSE Argentina surge para:\n\nVisibilizar el trabajo de quienes desarrollan software en el contexto de la investigación\nConectar a profesionales que comparten desafíos similares\nPromover el reconocimiento institucional del rol de RSE\nCompartir conocimientos y buenas prácticas\nFortalecer la calidad del software de investigación en Argentina\n\n\n\nEl contexto argentino\nEn Argentina, muchos investigadores, becarios doctorales, postdocs y personal de apoyo dedican gran parte de su tiempo al desarrollo de software, pero:\n\nEsta labor no siempre es valorada en las evaluaciones académicas\nFalta formación específica en desarrollo de software científico\nNo existe un camino claro de desarrollo profesional para RSEs\nEl conocimiento técnico se pierde cuando los investigadores cambian de proyecto"
+  },
+  {
+    "objectID": "que-es-rse.html#únete-a-la-comunidad",
+    "href": "que-es-rse.html#únete-a-la-comunidad",
+    "title": "¿Qué es RSE?",
+    "section": "Únete a la comunidad",
+    "text": "Únete a la comunidad\nEstamos construyendo una comunidad inclusiva y colaborativa. No importa si:\n\nEres autodidacta o tienes formación formal en computación\nTrabajas en el sector público, privado o académico\nDesarrollas software complejo o scripts simples\nTienes años de experiencia o recién empiezas\n\n¡Todos los que contribuyen con software a la investigación son bienvenidos!\n\n\n\n\n\n\n¿Sabías que…?\n\n\n\nEl movimiento RSE comenzó en 2012 en Reino Unido y desde entonces ha crecido internacionalmente, con asociaciones formales en más de 14 países y regiones, incluyendo Chile en Latinoamérica."
+  },
+  {
+    "objectID": "que-es-rse.html#próximos-pasos",
+    "href": "que-es-rse.html#próximos-pasos",
+    "title": "¿Qué es RSE?",
+    "section": "Próximos pasos",
+    "text": "Próximos pasos\n\nConoce al equipo que está impulsando esta iniciativa\nParticipa en nuestros eventos para conectar con la comunidad\nExplora recursos para mejorar tus habilidades\nContáctanos para involucrarte más activamente"
+  },
+  {
+    "objectID": "contacto.html",
+    "href": "contacto.html",
+    "title": "Contacto",
+    "section": "",
+    "text": "Hay muchas formas de conectarte con nuestra comunidad."
+  },
+  {
+    "objectID": "contacto.html#conéctate-con-la-comunidad-rse-argentina",
+    "href": "contacto.html#conéctate-con-la-comunidad-rse-argentina",
+    "title": "Contacto",
+    "section": "",
+    "text": "Hay muchas formas de conectarte con nuestra comunidad."
+  },
+  {
+    "objectID": "contacto.html#contacto-directo",
+    "href": "contacto.html#contacto-directo",
+    "title": "Contacto",
+    "section": "📧 Contacto directo",
+    "text": "📧 Contacto directo\nPara consultas específicas, colaboraciones o propuestas:\nEmail general: rse.comunidad.argentina@gmail.com.ar"
+  },
+  {
+    "objectID": "contacto.html#encuentros-regionales",
+    "href": "contacto.html#encuentros-regionales",
+    "title": "Contacto",
+    "section": "📍 Encuentros regionales",
+    "text": "📍 Encuentros regionales\nSi querés organizar uno en tu ciudad, ¡contáctanos!"
+  },
+  {
+    "objectID": "contacto.html#colabora-con-nosotros",
+    "href": "contacto.html#colabora-con-nosotros",
+    "title": "Contacto",
+    "section": "🤝 Colabora con nosotros",
+    "text": "🤝 Colabora con nosotros\n\nFormas de colaborar:\n\nOrganizar eventos: Talleres, charlas o meetups\nCrear contenido: Tutoriales y blog posts\nDifusión: Compartir nuestros eventos\n\n\n\n\n\n\n\n\n¿No sabés por dónde empezar?\n\n\n\n\n\n\nAsistí a nuestros próximos eventos online[serie de charlas sobre RSE en Argentina]: PRÓXIMAMENTE"
+  },
+  {
+    "objectID": "actividades.html",
+    "href": "actividades.html",
+    "title": "Agenda 2026",
+    "section": "",
+    "text": "Estamos trabajando en la agenda de actividades para este año. Nuestro objetivo es crear espacios de formación y encuentro para la comunidad de RSE en Argentina.\n\n\nSi querés recibir la invitación a nuestras próximas charlas y talleres antes que nadie, dejanos tus datos en este formulario:\n\nCargando…"
+  },
+  {
+    "objectID": "actividades.html#próximamente",
+    "href": "actividades.html#próximamente",
+    "title": "Agenda 2026",
+    "section": "",
+    "text": "Estamos trabajando en la agenda de actividades para este año. Nuestro objetivo es crear espacios de formación y encuentro para la comunidad de RSE en Argentina.\n\n\nSi querés recibir la invitación a nuestras próximas charlas y talleres antes que nadie, dejanos tus datos en este formulario:\n\nCargando…"
+  },
+  {
+    "objectID": "quienes-somos.html",
+    "href": "quienes-somos.html",
+    "title": "Quiénes Somos",
+    "section": "",
+    "text": "RSE Argentina es una iniciativa comunitaria coordinada por un equipo de voluntarios comprometidos con visibilizar y fortalecer el rol de las personas encargadas de desarrollar software de investigación.\n\n\n\n\n\n\nCoordinadora\nLicenciada en sistemas de Información recibida en la UNNE, actualmente cursando un máster en Tecnologías de la Información, con varios años de experiencia en distintos roles técnicos, helpdesk, analista funcional, diseño de base de datos y desarrolladora de software. Apasionada por el código reproducible y la ciencia abierta.\n📧 patricia.andrea.loto@gmail.com | GitHub | LinkedIn\n\n\n\n\n\n\nCoordinadora\nSocióloga & Analista de Estadísticas de Población. Especialista en el procesamiento de grandes volúmenes de datos. Mi enfoque combina las Ciencias Sociales con el desarrollo de software científico, aplicando metodologías de reproducibilidad para garantizar el rigor técnico en la investigación social abierta.\n📧 andrea@rladies.org | GitHub | LinkedIn"
+  },
+  {
+    "objectID": "quienes-somos.html#coordinación",
+    "href": "quienes-somos.html#coordinación",
+    "title": "Quiénes Somos",
+    "section": "",
+    "text": "RSE Argentina es una iniciativa comunitaria coordinada por un equipo de voluntarios comprometidos con visibilizar y fortalecer el rol de las personas encargadas de desarrollar software de investigación.\n\n\n\n\n\n\nCoordinadora\nLicenciada en sistemas de Información recibida en la UNNE, actualmente cursando un máster en Tecnologías de la Información, con varios años de experiencia en distintos roles técnicos, helpdesk, analista funcional, diseño de base de datos y desarrolladora de software. Apasionada por el código reproducible y la ciencia abierta.\n📧 patricia.andrea.loto@gmail.com | GitHub | LinkedIn\n\n\n\n\n\n\nCoordinadora\nSocióloga & Analista de Estadísticas de Población. Especialista en el procesamiento de grandes volúmenes de datos. Mi enfoque combina las Ciencias Sociales con el desarrollo de software científico, aplicando metodologías de reproducibilidad para garantizar el rigor técnico en la investigación social abierta.\n📧 andrea@rladies.org | GitHub | LinkedIn"
+  },
+  {
+    "objectID": "quienes-somos.html#rse-argentina-cuenta-con-una-red-de-comunidades-amigas",
+    "href": "quienes-somos.html#rse-argentina-cuenta-con-una-red-de-comunidades-amigas",
+    "title": "Quiénes Somos",
+    "section": "RSE Argentina cuenta con una red de comunidades amigas:",
+    "text": "RSE Argentina cuenta con una red de comunidades amigas:\n\nR-Ladies Resistencia-Corrientes\nR en Buenos Aires\nRSE en Chile"
+  },
+  {
+    "objectID": "quienes-somos.html#historia",
+    "href": "quienes-somos.html#historia",
+    "title": "Quiénes Somos",
+    "section": "Historia",
+    "text": "Historia\nLa idea de formar la comunidad de RSE en Argentina surgió durante la conferencia de Software de Investigación, RSECon25, realizada en Warwick en septiembre de 2025. Inspiradas por iniciativas similares en otros países, y sabiendo que en nuestra región por el momento solo existe un grupo regional, decidimos crear un espacio para:\n\nCompartir experiencias y desafíos comunes\nPromover el reconocimiento del trabajo del sesarrollador de software científico\nEstablecer conexiones con la red internacional de RSE\n\n\nHitos importantes\n\nSeptiembre 2025: Ideas y sinergia para crear el grupo en Argentina\nOctubre 2025: Charla inicial organizada entre comunidades amigas para dar a conocer la RSE en nuestra región\nEnero 2026: Lanzamiento oficial del sitio web\nAbril - Julio 2026: Serie de Charlas sobre Software de Investigación"
+  },
+  {
+    "objectID": "quienes-somos.html#agradecimientos",
+    "href": "quienes-somos.html#agradecimientos",
+    "title": "Quiénes Somos",
+    "section": "Agradecimientos",
+    "text": "Agradecimientos\nAgradecemos a:\n\nRSECon25: Por la inspiración y conectarnos con la comunidad global\nRSE Chile: Por su empuje y colaboración regional"
+  },
+  {
+    "objectID": "quienes-somos.html#gobernanza",
+    "href": "quienes-somos.html#gobernanza",
+    "title": "Quiénes Somos",
+    "section": "Gobernanza",
+    "text": "Gobernanza\nRSE Argentina funciona como una comunidad horizontal con decisiones tomadas por consenso. Nuestros principios son:\n\nInclusión: Todas las personas interesadas en la temática son bienvenidas sin importar su nivel o experiencia\nColaboración: Compartimos conocimientos abiertamente\nDiversidad: Valoramos diferentes perspectivas y experiencias"
   }
 ]

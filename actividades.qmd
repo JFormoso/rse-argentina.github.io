@@ -1,0 +1,16 @@
+---
+title: "Agenda 2026"
+---
+
+## Próximamente
+
+Estamos trabajando en la agenda de actividades para este año. Nuestro objetivo es crear espacios de formación y encuentro para la comunidad de **RSE en Argentina**.
+
+::: hex-card-wide
+
+### ¡No te pierdas nada!
+
+Si querés recibir la invitación a nuestras próximas charlas y talleres antes que nadie, dejanos tus datos en este formulario:
+
+<iframe src="https://forms.gle/tAP5tsoWMfyWS99u9" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" style="border: none;">Cargando…</iframe>
+:::

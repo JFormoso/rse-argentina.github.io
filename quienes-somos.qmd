@@ -1,5 +1,6 @@
 ---
 title: "Quiénes Somos"
+
 ---
 
 ## Coordinación
@@ -8,39 +9,63 @@ RSE Argentina es una iniciativa comunitaria coordinada por un equipo de voluntar
 
 ### Equipo Voluntario
 
+:::: {.columns}
+
+::: {.column width="45%"}
+
+::: hex-card
 #### Patricia A.Loto
 
-*Coordinadora*
+**Coordinadora**
 
 Licenciada en sistemas de Información recibida en la UNNE, actualmente cursando un máster en Tecnologías de la Información, con varios años de experiencia en distintos roles técnicos, helpdesk, analista funcional, diseño de base de datos y desarrolladora de software. Apasionada por el código reproducible y la ciencia abierta.
 
--   📧 patricia.andrea.loto\@gmail.com
--   🔗 [GitHub](https://github.com/patriloto)
--   🔗 [LinkedIn](https://www.linkedin.com/in/patricia-loto/) 
+  📧 patricia.andrea.loto\@gmail.com | [**GitHub**](https://github.com/patriloto) | [**LinkedIn**](https://www.linkedin.com/in/patricia-loto/) 
+:::
 
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+::: hex-card
 #### Andrea Gomez Vargas
 
-*Colaboradora*
+**Coordinadora**
 
-Socióloga & Analista de Estadísticas de Población.
+Socióloga & Analista de Estadísticas de Población. Especialista en el procesamiento de grandes volúmenes de datos. Mi enfoque combina las Ciencias Sociales con el desarrollo de software científico, aplicando metodologías de reproducibilidad para garantizar el rigor técnico en la investigación social abierta.
 
--   📧 andrea.gomezv11\@gmail.com
--   🔗 [GitHub](https://github.com/SoyAndrea)
--   🔗 [LinkedIn](https://www.linkedin.com/in/andreasociologa/)
+  📧 andrea\@rladies.org | [**GitHub**](https://github.com/SoyAndrea) | [**LinkedIn**](https://www.linkedin.com/in/andreasociologa/)
+:::
 
-RSE Argentina cuenta con una red de comunidades amigas:
+:::
+
+::::
+
+
+## RSE Argentina cuenta con una red de comunidades amigas:
+
+
+-   [**R-Ladies Resistencia-Corrientes**](https://github.com/RLadiesResistenciaCorrientes)
 
 -   [**R en Buenos Aires**](https://github.com/renbaires)
+
 -   [**RSE en Chile**](https://rse-chile.github.io/)
--   [**R-Ladies Rcia-Ctes**](https://github.com/RLadiesResistenciaCorrientes)
+
 
 ## Historia
 
-La idea de formar la comunidad de RSE en Argentina surgió durante la conferencia de Software de Investigación, [RSECON25](https://rsecon25.society-rse.org/), realizada en Warwick en septiembre de 2025. Inspiradas por iniciativas similares en otros países, y sabiendo que en nuestra región por el momento solo existe un grupo regional, decidimos crear un espacio para:
+
+La idea de formar la comunidad de RSE en Argentina surgió durante la conferencia de Software de Investigación, [RSECon25](https://rsecon25.society-rse.org/), realizada en Warwick en septiembre de 2025. Inspiradas por iniciativas similares en otros países, y sabiendo que en nuestra región por el momento solo existe un grupo regional, decidimos crear un espacio para:
+
 
 -   Compartir experiencias y desafíos comunes
 -   Promover el reconocimiento del trabajo del sesarrollador de software científico
 -   Establecer conexiones con la red internacional de RSE
+
 
 ### Hitos importantes
 
@@ -53,7 +78,7 @@ La idea de formar la comunidad de RSE en Argentina surgió durante la conferenci
 
 Agradecemos a:
 
--   **RSECON25**: Por la inspiración y conectarnos con la comunidad global
+-   **RSECon25**: Por la inspiración y conectarnos con la comunidad global
 -   **RSE Chile**: Por su empuje y colaboración regional
 
 ## Gobernanza
