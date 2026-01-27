@@ -13,10 +13,11 @@ title: "Recursos"
 ### Desarrollo de software científico
 
 -   🐍 [**Scientific Python Tutorials**](https://learn.scientific-python.org/) - Tutoriales de Python Científico
--   📖 [Intro a la programación](https://intro-programacion.netlify.app) - Curso introductorio de programación en español 
 -   📊 [**R for Data Science**](https://r4ds.had.co.nz/) - Libro sobre R para Ciencia de datos
 -   🔧 [**Research Software Engineering with Python**](https://alan-turing-institute.github.io/rse-course/html/index.html) - Curso completo de Ingeniería de Software de investigación con python por el Alan Turing Institute
 -   📦 [**Reproducible Research in R**](https://ropensci.org/packages/) - Investigación rerpoducible en R por rOpenSci
+-   📖 [**Intro a la programación**](https://intro-programacion.netlify.app) - Curso introductorio de programación totalmente en español 
+-   📖 [Material de entrenamiento del programa de campeones de rOpenSci] (https://champions-program.ropensci.org/resources/resources.html) - Incluye diferentes tópicos como Git, desarrollo de paquetes, entre otros.
 
 
 ## Materiales de RSE Argentina
@@ -26,4 +27,5 @@ title: "Recursos"
 ## Contribuir recursos
 
 ¿Conoces algún recurso valioso que no está en la lista? ¡Ayúdanos a mejorar esta sección abriendo un issue y sumando tu sugerencia!
+
 
