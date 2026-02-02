@@ -23,7 +23,7 @@ Si querés organizar uno en tu ciudad, ¡contáctanos!
 
 ### Formas de colaborar:
 
-1. **Organizar eventos**: Talleres, charlas o meetups
+1. **Organizar eventos**: Talleres o charlas
 2. **Crear contenido**: Tutoriales y blog posts
 3. **Difusión**: Compartir nuestros eventos
 
@@ -36,7 +36,8 @@ Si querés organizar uno en tu ciudad, ¡contáctanos!
 <!-- 1. Únete a la [lista de correo](#lista-de-correo) -->
 <!-- 2. Preséntate en el canal #presentaciones de Slack -->
 
-1. Asistí a nuestros próximos eventos online[serie de charlas sobre RSE en Argentina]: PRÓXIMAMENTE
+1. Asistí a nuestros próximos eventos online **serie de charlas sobre RSE en Argentina**: PRÓXIMAMENTE
 <!-- 2. ¡Seguínos en redes! -->
 :::
+
 
